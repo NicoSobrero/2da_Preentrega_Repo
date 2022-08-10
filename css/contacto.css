@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#img_header{
+    min-width: 198px;
+    min-height: 65px;
+    max-width: 100%;
+    
+}
+
+#footer{
+    background-color: aquamarine;
+}
