@@ -38,6 +38,18 @@
     width: 15%;
 }
 #layout{
+    background-color: rgb(255, 236, 209);
+}
+#nav{
+    background-color: rgb(27, 97, 109);
+}
+#btns{
+    background-color: rgb(224, 159, 62);
+    color: rgb(83, 20, 20);
+    font-size:large;
+}
+
+#layout{
     grid-area: layout;
     display:grid;
     grid-template-columns: 50%;
@@ -73,7 +85,7 @@ p{
 
 #footer{
     grid-area: footer;
-    background-color: rgb(189, 239, 252);
+    background-color: rgb(27, 97, 109);
 }
 
 
@@ -93,7 +105,7 @@ p{
 #grid{
     display:grid;
     grid-template-columns: 100% ;
-    grid-template-rows: 100px 110px 400px 40px;
+    grid-template-rows: 100px 110px 100% 40px ;
     grid-template-areas:"header"
                         "nav"
                         "layout"
@@ -122,6 +134,9 @@ p{
         width: 10%;
         font-size: 7px;
     }
+    #btns{
+    font-size:x-small;
+    }
 h1{
     font-size: 30px;
 }
@@ -134,12 +149,15 @@ p{
 #grid{
         display:grid;
         grid-template-columns: 100% ;
-        grid-template-rows: 200px 70px 550px 100px;
+        grid-template-rows: 200px 70px 100% 70px;
         grid-template-areas:"header"
                             "nav"
                             "layout"
                             "footer";
 }
+#btns{
+    font-size:small;
+    }
 h1{
     font-size: 220%;
 }    
@@ -149,18 +167,18 @@ p{
 
 }
 
-@media only screen and ( min-width:800px){
+@media only screen and ( min-width:900px){
 #grid{
         display:grid;
         grid-template-columns: 100% ;
-        grid-template-rows: 300px 100px 900px 200px;
+        grid-template-rows: 300px 100px 100% 100px;
         grid-template-areas:"header"
                             "nav"
                             "layout"
                             "footer";
 }  
-#nav{
-    flex-direction: row;    
-}
+#btns{
+    font-size:large;
+    }
 }
 

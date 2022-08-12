@@ -36,6 +36,15 @@
 #nav_contacto{
     width: 15%;
 }
+#nav{
+    background-color: rgb(27, 97, 109);
+    height: 100%;
+}
+#btns{
+    background-color: rgb(224, 159, 62);
+    color: rgb(83, 20, 20);
+}
+
 #grid{
     display:grid;
     grid-template-columns:100%;
@@ -43,22 +52,21 @@
                          "nav"
                          "layout"
                          "footer";
-    justify-items:wrap
+
+    background-color: rgb(255, 236, 209); 
 }
 #layout{
     display:grid;
     grid-area:layout;
     justify-content: space-evenly;  
-    background-color: rgb(235, 255, 148);
 }
 #titulo{ grid-area:a1;
     justify-self: center;
     align-self: center;
 }
-footer{
+#footer{
     grid-area: footer;
-    background-color: rgb(189, 239, 252);
-    height: 100%;
+    background-color: rgb(27, 97, 109);
 }
 
 
@@ -92,6 +100,9 @@ footer{
         width: 10%;
         font-size: 7px;
     }
+    #btns{
+        font-size:x-small;
+    }
     
     
     #layout{
@@ -124,11 +135,14 @@ footer{
                               "a5 a6 a7"
                               "a8 a9 a10";        
     }
+    #btns{
+        font-size:small;
+        }  
 }
 
 @media only screen and ( min-width: 800px ) {
     #grid{
-        grid-template-rows: 300px 100px 588px 200px;
+        grid-template-rows: 300px 100px 588px 100px;
     }
         
     #layout{
@@ -139,5 +153,8 @@ footer{
         grid-template-areas:  "a1 a1 a1 a1"
                               "a2 a3 a4 a5"
                               "a6 a7 a8 a9";         
+    }
+    #btns{
+        font-size:large;
     }
 }

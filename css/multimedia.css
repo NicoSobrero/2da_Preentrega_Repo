@@ -5,7 +5,7 @@
  
 .animate__animated.animate__backInUp {
     --animate-duration: 6s;
-    }
+}
 
 #grid{
     display:grid;
@@ -14,6 +14,7 @@
                         "nav"
                         "layout"
                         "footer";
+    background-color: rgb(255, 236, 209); 
 }
 
 #header{ 
@@ -31,8 +32,7 @@
     display:flex;
     flex-direction: row;    
     justify-content: space-evenly;
-    align-items:center;            
-    background-color: rgb(189, 239, 252);
+    align-items:center; 
 }
 #nav_home{
     width: 15%;
@@ -53,6 +53,15 @@
     width: 15%;
 
 }
+#nav{
+    background-color: rgb(27, 97, 109);
+    height: 100%;
+}
+#btns{
+    background-color: rgb(224, 159, 62);
+    color: rgb(83, 20, 20);
+}
+
 #layout{
     grid-area: layout;
     display:grid;
@@ -115,71 +124,83 @@ h1{
 
 #footer{
         grid-area: footer;
-        background-color: rgb(189, 239, 252);
+        background-color: rgb(27, 97, 109);
 }
 
 @media only screen and ( max-width: 600px){     
 
     #grid{
     grid-template-rows: 100px 95px 1000px 40px;
-}
+    }
 
     #header{ 
     align-self: stretch;
     justify-content: stretch;
-}
+    }
 
     #nav{
         flex-direction: column;    
-        height: max-content;   
-}
+
+    }   
     #nav_home{
         width: 10%;
         font-size: 7px;
-}
+    }
     #nav_catalogo{
         width: 10%;
         font-size: 7px;
-}
+    }
     #nav_oraciones{
         width: 10%;
         font-size: 7px;
-}
+    }
     #nav_multimedia{
         width: 10%;
         font-size: 7px;
-}
+    }
     #nav_contacto{
         width: 10%;
         font-size: 7px;
-}
+    }
+    #btns{
+        font-size:x-small;
+    }
 
-h1{
-    font-size: 30px;
-}
-#video1{
-    width: 30%;
-    height: 50%;
-}
-#video2{
-    width: 30%;
-    height: 50%;
-}
-#video3{
-    width: 30%;
-    height: 50%;
-}
+    h1{
+        font-size: 30px;
+    }
+    #video1{
+        width: 30%;
+        height: 50%;
+    }
+    #video2{
+        width: 30%;
+        height: 50%;
+    }
+    #video3{
+        width: 30%;
+        height: 50%;
+    }
 
 }
 
 @media only screen and ( min-width: 600px){
     #grid{
-        grid-template-rows: 200px 70px 900px 100px;
-    }     
+        grid-template-rows: 200px 70px 900px 70px;
+    }
+    #btns{
+        font-size:small;
+        }  
 }
 
 @media only screen and ( min-width:800px){
     #grid{
-        grid-template-rows: 300px 100px 900px 200px;
+        grid-template-rows: 300px 100px 900px 100px;
     }
+
+    #btns{
+        font-size:large;
+    }
+
+    
 }

@@ -7,10 +7,41 @@
 #img_header{
     min-width: 198px;
     min-height: 65px;
-    max-width: 100%;
-    
+    max-width: 100%;    
+}
+
+#nav{
+    background-color: rgb(27, 97, 109);
+}
+#btns{
+    background-color: rgb(224, 159, 62);
+    color: rgb(83, 20, 20);
+}
+
+#layout{
+    background-color: rgb(255, 236, 209); 
 }
 
 #footer{
-    background-color: aquamarine;
+    background-color: rgb(27, 97, 109);
+}
+
+@media only screen and ( max-width: 600px) {    
+    #btns{
+        font-size:x-small;
+    }
+
+}
+
+@media only screen and ( min-width: 600px) {
+
+    #btns{
+        font-size:small;
+        }  
+}
+
+@media only screen and ( min-width: 800px ) {
+    #btns{
+        font-size:large;
+    }
 }
