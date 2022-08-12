@@ -1,0 +1,10 @@
+  
+#grid{
+    display:grid;
+    grid-template-columns: 100% ;
+    grid-template-areas:"header"
+                        "nav"
+                        "layout"
+                        "footer"; 
+    background-color:$colorlayout; 
+}
