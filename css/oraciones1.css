@@ -1,15 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-#texto {
-  justify-self: center;
-  align-self: center;
-  height: 15rem;
-  width: 70%;
-  margin-bottom: 5%;
-  overflow-y: scroll; }
-
-* {
-  margin: 0;
-  padding: 0; }
+#header {
+  grid-area: header; }
 
 .header {
   display: flex;
@@ -28,19 +19,29 @@
 .logo {
   width: 100px;
   height: auto; }
-
-.logo:hover {
-  background-color: #ffecd1; }
+  .logo:hover {
+    background-color: #ffecd1; }
 
 .navLink {
   color: #fff;
   text-decoration: none; }
+  .navLink:hover {
+    text-decoration: none;
+    color: #fcbf49;
+    background-color: #ffecd1;
+    border-radius: 5px; }
 
-.navLink:hover {
-  text-decoration: none;
-  color: #fcbf49;
-  background-color: #ffecd1;
-  border-radius: 5px; }
+* {
+  margin: 0;
+  padding: 0; }
+
+#texto {
+  justify-self: center;
+  align-self: center;
+  height: 15rem;
+  width: 70%;
+  margin-bottom: 5%;
+  overflow-y: scroll; }
 
 h1 {
   color: #531414;
@@ -50,15 +51,15 @@ h1 {
 p {
   color: black; }
 
-@keyframes opacidad {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+#imagen {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+  padding-top: 5%; }
 
-.a1 {
-  animation-name: opacidad;
-  animation-duration: 5s; }
+.imagen_cita {
+  justify-self: center;
+  align-self: center; }
 
 #grid {
   display: grid;
@@ -68,9 +69,6 @@ p {
  "main"
  "footer";
   background-color: #ffecd1; }
-
-#header {
-  grid-area: header; }
 
 .main {
   grid-area: main; }
@@ -85,16 +83,6 @@ p {
  "texto4 texto4 imagen4";
   gap: 15px;
   padding-bottom: 5%; }
-
-#imagen {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 5%;
-  padding-top: 5%; }
-
-.imagen_cita {
-  justify-self: center;
-  align-self: center; }
 
 .texto_1 {
   grid-area: texto1; }
@@ -120,20 +108,6 @@ p {
 .imagen4 {
   grid-area: imagen4; }
 
-footer {
-  grid-area: footer;
-  background-color: #fcbf49;
-  height: 10vh; }
-
-.contenedor-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.icons {
-  font-size: 2rem;
-  padding: 20px; }
-
 @media only screen and (max-width: 600px) {
   .contenedor {
     display: grid;
@@ -149,3 +123,17 @@ footer {
  "texto4";
     gap: 15px;
     padding-bottom: 5%; } }
+
+footer {
+  grid-area: footer;
+  background-color: #fcbf49;
+  height: 10vh; }
+
+.contenedor-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.icons {
+  font-size: 2rem;
+  padding: 20px; }
