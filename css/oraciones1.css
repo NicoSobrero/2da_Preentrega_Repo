@@ -65,9 +65,7 @@ p {
   display: grid;
   grid-template-columns: 100%;
   grid-auto-rows: auto;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   background-color: #ffecd1; }
 
 .main {
@@ -77,10 +75,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
-  grid-template-areas: "texto1 texto1 imagen1"
- "texto2 texto2 imagen2"
- "texto3 texto3 imagen3"
- "texto4 texto4 imagen4";
+  grid-template-areas: "texto1 texto1 imagen1" "texto2 texto2 imagen2" "texto3 texto3 imagen3" "texto4 texto4 imagen4";
   gap: 15px;
   padding-bottom: 5%; }
 
@@ -113,14 +108,7 @@ p {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: auto;
-    grid-template-areas: "imagen1"
- "texto1"
- "imagen2"
- "texto2"
- "imagen3"
- "texto3"
- "imagen4"
- "texto4";
+    grid-template-areas: "imagen1" "texto1" "imagen2" "texto2" "imagen3" "texto3" "imagen4" "texto4";
     gap: 15px;
     padding-bottom: 5%; } }
 

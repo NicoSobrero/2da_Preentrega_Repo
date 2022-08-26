@@ -1,0 +1,39 @@
+#header{
+    grid-area: header;
+}
+
+.header{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img_header{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(221, 190, 169); 
+}
+
+.fondo{
+    background-color: rgb(252, 191, 73);
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+     &:hover{
+         background-color: rgb(255, 236, 209);
+     }
+}
+
+.navLink{
+    color: #fff;
+    text-decoration: none;
+     &:hover{
+         text-decoration: none;
+         color: rgb(252, 191, 73);
+         background-color: rgb(255, 236, 209);
+         border-radius: 5px;
+     }
+}

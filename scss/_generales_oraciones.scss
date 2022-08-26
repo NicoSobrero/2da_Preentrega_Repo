@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@mixin estilo_txt_oraciones( $txt_justify , $txt_align , $txt_height, $txt_width, $txt_margin){
+    justify-self: $txt_justify;
+    align-self: $txt_align;
+    height: $txt_height;
+    width: $txt_width;
+    margin-bottom: $txt_margin;  
+}
+
+#texto{
+    @include estilo_txt_oraciones ( center , center , 15rem , 70% , 5% );
+    overflow-y: scroll;
+}
+
+h1{
+    color:rgb(83, 20, 20);
+    text-align: center;
+    padding: 5%;
+}
+p{
+    color:black;
+}
+
+
+#imagen{
+    width: 100%;
+    height: 100%;
+    padding-bottom:5%;
+    padding-top:5%;
+}
+.imagen_cita{
+    justify-self: center;
+    align-self: center;
+}
