@@ -60,16 +60,7 @@ h1{
     animation-duration: 5s;
 }
 
-#grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-    background-color: rgb(255, 236, 209); 
-}
+
 
 #header{
     grid-area: header;
@@ -79,51 +70,10 @@ h1{
     grid-area: main;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas:
-    "img_logo img_logo"
-    "texto texto"
-    "foto1 foto2";
-    gap: 15px;
-    padding-bottom: 15%;
-}
-
-
-#logo{
-    min-width: 172px;
-    min-height: 250px;
-    grid-area: img_logo;
-    width: 25%;   
-    
-}
-
-.imagen{
-    width: 70%;
-    height: auto;
-    justify-self: center;
-    align-self: center;
-    
-}
-.texto{
-    grid-area: texto;
-    padding: 6%;
-}
 
 
 
-#foto1{
-    min-width: 172px;
-    min-height: 172px;
-    grid-area: foto1;
-}
-#foto2{
-    min-width: 172px;
-    min-height: 172px;
-    grid-area: foto2;
-}
+
 
 footer{
     grid-area: footer;
@@ -141,60 +91,4 @@ footer{
 }
 
 
-@media only screen and (max-width:400px){
-    #grid{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: auto;
-            grid-template-areas:
-            "header "
-            "main "
-            "footer";
-    }
-    .contenedor{
-            display: grid;
-                grid-template-columns: 2fr;
-                grid-auto-rows: auto;
-                grid-template-areas:
-                "img_logo" 
-                "texto"
-                "foto1"
-                "foto2";
-                gap: 15px;
-    }
-
-    p{
-        font-size: 11px;
-    }
-    .logo{
-            width:50px;
-    }
-    .icons{
-            font-size: 1rem;
-            padding: 10px;
-    }
-}
-
-@media only screen and (min-width:400px) and (max-width:800px){
-    .contenedor{
-            display: grid;
-            grid-template-columns:repeat(2, 1fr);
-            grid-auto-rows:auto;
-            grid-template-areas:
-            "texto img_logo"
-            "barra"
-            "foto1 foto2";
-            gap:15px;
-            padding-bottom:5%;
-    
-    }
-
-    .logo{
-            width:75px;
-    }
-    .icons{
-            font-size: 1.5rem;
-            padding: 20px;
-    }
-}
 

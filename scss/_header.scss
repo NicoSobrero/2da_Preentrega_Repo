@@ -1,3 +1,9 @@
+.prueba{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
 #header{
     grid-area: header;
 }
@@ -12,18 +18,18 @@
 #img_header{
     width: 100%;
     height: fit-content;
-    background-color: rgb(221, 190, 169); 
+    background-color: $color_header; 
 }
 
 .fondo{
-    background-color: rgb(252, 191, 73);
+    background-color: $color_nav;
 }
 
 .logo{
     width: 100px;
     height: auto;
      &:hover{
-         background-color: rgb(255, 236, 209);
+         background-color: $color_fondo;
      }
 }
 
@@ -32,8 +38,8 @@
     text-decoration: none;
      &:hover{
          text-decoration: none;
-         color: rgb(252, 191, 73);
-         background-color: rgb(255, 236, 209);
+         color: $color_nav;
+         background-color: $color_fondo;
          border-radius: 5px;
      }
 }

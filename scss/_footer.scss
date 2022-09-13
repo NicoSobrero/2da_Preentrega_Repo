@@ -1,8 +1,9 @@
 footer{
     grid-area: footer;
-    background-color: rgb(252, 191, 73);
+    background-color: $color_nav;
     height: 10vh;
 }
+
 .contenedor-footer{
     display: flex;
     justify-content: center;
@@ -11,4 +12,5 @@ footer{
 .icons{
     font-size: 2rem;
     padding: 20px;
+    color: $color_titulos;
 }

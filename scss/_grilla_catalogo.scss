@@ -1,6 +1,6 @@
-#grid_index{
+#grid_catalogo{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     grid-template-areas:
     "header header header"
@@ -9,19 +9,17 @@
     background-color: $color_fondo; 
 }
 
-.contenedor_index{
+.contenedor_catalogo{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    grid-template-areas:
-    "img_logo img_logo"
-    "texto texto"
-    "foto1 foto2";
     gap: 15px;
-    padding-bottom: 15%;
+    padding: 5%;
+    padding-bottom: 5%;
 }
+
 @media only screen and (max-width:400px){
-    #grid_index{
+    #grid_catalogo{
             display: grid;
             grid-template-columns: 1fr;
             grid-auto-rows: auto;
@@ -30,20 +28,14 @@
             "main "
             "footer";
     }
-    .contenedor_index{
+    .contenedor_catalogo{
             display: grid;
-                grid-template-columns: 2fr;
-                grid-auto-rows: auto;
-                grid-template-areas:
-                "img_logo" 
-                "texto"
-                "foto1"
-                "foto2";
-                gap: 15px;
+                    grid-template-columns: 1fr;
+                    grid-auto-rows: auto;
+                    gap: 15px;
     }
-
-    p{
-        font-size: 11px;
+    .libro_catalogo img{
+            width: 120px;
     }
     .logo{
             width:50px;
@@ -55,20 +47,18 @@
 }
 
 @media only screen and (min-width:400px) and (max-width:800px){
-    .contenedor_index{
+    .contenedor_catalogo{
             display: grid;
             grid-template-columns:repeat(2, 1fr);
             grid-auto-rows:auto;
-            grid-template-areas:
-            "texto img_logo"
-            "barra"
-            "foto1 foto2";
             gap:15px;
             padding-bottom:5%;
     
     }
-
-    .logo{
+    .libro_catalogo img{
+            width: 150px;
+    }
+    .logo_catalogo{
             width:75px;
     }
     .icons{

@@ -44,7 +44,7 @@
     border-radius: 5px;
 }
 
-#grid{
+#grid_catalogo{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
@@ -59,7 +59,7 @@
         grid-area: header;
 }
 
-.main{
+.main_catalogo{
         grid-area: main;
 }
 
@@ -68,7 +68,7 @@ h1{
         padding: 5%;
     }
 
-.contenedor{
+.contenedor_catalogo{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
@@ -77,11 +77,11 @@ h1{
         padding-bottom: 5%;
 }
 
-.libro img{
+.libro_catalogo img{
         width: 200px;
         height: auto;
 }
-.libro{
+.libro_catalogo{
         justify-self: center;
         align-self: center;
         padding:3%;
@@ -106,7 +106,7 @@ footer{
 
 
 @media only screen and (max-width:400px){
-        #grid{
+        #grid_catalogo{
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-auto-rows: auto;
@@ -115,13 +115,13 @@ footer{
                 "main "
                 "footer";
         }
-        .contenedor{
+        .contenedor_catalogo{
                 display: grid;
                         grid-template-columns: 1fr;
                         grid-auto-rows: auto;
                         gap: 15px;
         }
-        .libro img{
+        .libro_catalogo img{
                 width: 120px;
         }
         .logo{
@@ -134,7 +134,7 @@ footer{
 }
 
 @media only screen and (min-width:400px) and (max-width:800px){
-        .contenedor{
+        .contenedor_catalogo{
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
                 grid-auto-rows:auto;
@@ -142,10 +142,10 @@ footer{
                 padding-bottom:5%;
         
         }
-        .libro img{
+        .libro_catalogo img{
                 width: 150px;
         }
-        .logo{
+        .logo_catalogo{
                 width:75px;
         }
         .icons{

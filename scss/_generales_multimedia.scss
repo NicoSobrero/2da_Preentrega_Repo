@@ -1,0 +1,32 @@
+#txt1{
+    grid-area: texto1;
+}
+#vd1{
+    grid-area: video1;
+    height: 100%;
+}
+#txt2{
+    grid-area: texto2;
+}
+#vd2{
+    grid-area: video2;
+    height: 100%;
+}
+#txt3{
+    grid-area: texto3;
+}
+#vd3{
+    grid-area: video3;
+    height: 100%;
+}
+
+.txt_multimedia{
+    text-align: center;
+}
+
+iframe{
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}

@@ -1,49 +1,13 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 *{
     margin: 0;
     padding: 0;
 }
 
-.header{
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-#img_header{
-    width: 100%;
-    height: fit-content;
-    background-color: rgb(221, 190, 169); 
-}
-
-.fondo{
-    background-color: rgb(252, 191, 73);
-}
-
-.logo{
-    width: 100px;
-    height: auto;
-}
-.logo:hover{
-    background-color: rgb(255, 236, 209);
-}
-
-
-.navLink{
-    color: #fff;
-    text-decoration: none;
-}
-
-.navLink:hover{
-    text-decoration: none;
-    color: rgb(252, 191, 73);
-    background-color: rgb(255, 236, 209);
-    border-radius: 5px;
-}
 
 h1{
-    color:rgb(83, 20, 20);
+    color:$color_titulos;
+    background-color: $color_fondo;
     padding: 5%;
 }
 
@@ -60,39 +24,14 @@ h1{
     animation-duration: 5s;
 }
 
-#grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-    background-color: rgb(255, 236, 209); 
-}
 
-#header{
-    grid-area: header;
-}
 
 .main{
     grid-area: main;
+    background-color: $color_fondo;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas:
-    "img_logo img_logo"
-    "texto texto"
-    "foto1 foto2";
-    gap: 15px;
-    padding-bottom: 15%;
-}
-
-
-#logo{
+#logo_index{
     min-width: 172px;
     min-height: 250px;
     grid-area: img_logo;
@@ -100,14 +39,14 @@ h1{
     
 }
 
-.imagen{
+.imagen_index{
     width: 70%;
     height: auto;
     justify-self: center;
     align-self: center;
     
 }
-.texto{
+.texto_index{
     grid-area: texto;
     padding: 6%;
 }
@@ -124,77 +63,3 @@ h1{
     min-height: 172px;
     grid-area: foto2;
 }
-
-footer{
-    grid-area: footer;
-    background-color: rgb(252, 191, 73);
-    height: 10vh;
-}
-.contenedor-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icons{
-    font-size: 2rem;
-    padding: 20px;
-}
-
-
-@media only screen and (max-width:400px){
-    #grid{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: auto;
-            grid-template-areas:
-            "header "
-            "main "
-            "footer";
-    }
-    .contenedor{
-            display: grid;
-                grid-template-columns: 2fr;
-                grid-auto-rows: auto;
-                grid-template-areas:
-                "img_logo" 
-                "texto"
-                "foto1"
-                "foto2";
-                gap: 15px;
-    }
-
-    p{
-        font-size: 11px;
-    }
-    .logo{
-            width:50px;
-    }
-    .icons{
-            font-size: 1rem;
-            padding: 10px;
-    }
-}
-
-@media only screen and (min-width:400px) and (max-width:800px){
-    .contenedor{
-            display: grid;
-            grid-template-columns:repeat(2, 1fr);
-            grid-auto-rows:auto;
-            grid-template-areas:
-            "texto img_logo"
-            "barra"
-            "foto1 foto2";
-            gap:15px;
-            padding-bottom:5%;
-    
-    }
-
-    .logo{
-            width:75px;
-    }
-    .icons{
-            font-size: 1.5rem;
-            padding: 20px;
-    }
-}
-

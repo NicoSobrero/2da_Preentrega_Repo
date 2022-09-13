@@ -1,0 +1,42 @@
+#grid_contacto{
+    display: grid;
+    grid-template-columns:  100%;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "header "
+    "main"
+    "footer";
+    background-color:$color_fondo; 
+}
+
+.contenedor_contacto{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "texto form";
+    gap: 15px;
+    padding-bottom: 5%;
+}
+
+@media only screen and (max-width:600px){
+    .contenedor_contacto{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "texto" 
+        "form";
+        gap: 15px;
+        padding-bottom: 5%;
+    }
+
+    p{
+        font-size: 12px;
+    }
+    .logo{
+        width:50px;
+    }
+    .icons{
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

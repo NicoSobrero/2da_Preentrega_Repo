@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/catalogo1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Tienda Promesa - Catalogo</title>
 
 </head>
 <body>
-  <div id="grid">
+  <div id="grid_catalogo">
     <header id="header">
       <div class="imgheader">
       <img src="../imgs/banner_lapromesa-removebg-preview.png" alt="" id="img_header">
@@ -26,7 +27,7 @@
 
      <nav class="navbar navbar-expand-lg fondo">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../html/index1.html"><img src="../imgs/logo_lapromesa_imgnav-removebg-preview-removebg-preview.png" alt="logo" class="logo"></a>
+          <a class="navbar-brand" href="../html/index.html"><img src="../imgs/logo_lapromesa_imgnav-removebg-preview-removebg-preview.png" alt="logo" class="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,41 +57,47 @@
             <div >
                 <h1 class="text-center">CATALOGO</h1>
             </div>    
-            <div class="contenedor">
-                <div class="libro">
-                    <img src="../imgs/biblia_boda.jpeg" alt="biblia_boda">
+            <div class="contenedor_catalogo">
+                <div class="libro_catalogo">
+                    <img src="../imgs/biblia_boda.jpeg" alt="biblia_boda" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 </div>
-                <div class="libro">
-                    <img src="../imgs/biblia_mision_dios.jpeg" alt="biblia_mision_dios">
+                <div class="libro_catalogo">
+                    <img src="../imgs/biblia_mision_dios.jpeg" alt="biblia_mision_dios" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 </div> 
-                <div class="libro">
-                    <img src="../imgs/biblia_plateada.jpeg" alt="biblia_plateada">
+                <div class="libro_catalogo">
+                    <img src="../imgs/biblia_plateada.jpeg" alt="biblia_plateada" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 </div>
-                <div class="libro">
-                    <img src="../imgs/libro_matrimonio.jpeg" alt="libro_matrimonio">
+                <div class="libro_catalogo">
+                    <img src="../imgs/libro_matrimonio.jpeg" alt="libro_matrimonio" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 </div>
-                <div class="libro">
-                    <img src="../imgs/libro_mujerjoven.jpeg" alt="libro_mujerjoven">
+                <div class="libro_catalogo">
+                    <img src="../imgs/libro_mujerjoven.jpeg" alt="libro_mujerjoven" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 </div>
-                <div class="libro" >
-                    <img src="../imgs/libro_profetas.jpeg" alt="libro_profetas">
+                <div class="libro_catalogo" >
+                    <img src="../imgs/libro_profetas.jpeg" alt="libro_profetas" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 </div>
-                <div class="libro">
-                    <img src="../imgs/libro_sermejor.jpeg" alt="libro_sermejor">
+                <div class="libro_catalogo">
+                    <img src="../imgs/libro_sermejor.jpeg" alt="libro_sermejor" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 </div>
             </div>
 
     </main>
     <footer>
       <div class="contenedor-footer">
-        <i class="bi bi-facebook icons"></i>
-        <i class="bi bi-instagram icons"></i>
-        <i class="bi bi-linkedin icons"></i>
-        <i class="bi bi-github icons"></i>
+        <a href="https://www.facebook.com/La-Promesa-1577302612290960">
+        <i class="bi bi-facebook icons" class="iconos_redes" htref=""></i>
+        </a>
+        <a href="https://www.instagram.com/lapromesa.pos/">
+        <i class="bi bi-instagram icons" class="iconos_redes" htref=""></i>
+        </a>
       </div>
     </footer>
 </div> 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>    
 </body>

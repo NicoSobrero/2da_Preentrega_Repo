@@ -1,4 +1,4 @@
-#grid{
+#grid_oraciones{
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: auto;
@@ -6,14 +6,14 @@
     "header"
     "main"
     "footer";
-    background-color: rgb(255, 236, 209); 
+    background-color:rgb(255, 236, 209); 
     
 }
 .main{
     grid-area: main;
 }
 
-.contenedor{
+.contenedor_oraciones{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
@@ -24,6 +24,7 @@
     "texto4 texto4 imagen4";
     gap: 15px;
     padding-bottom: 5%;
+    background-color:rgb(255, 236, 209); 
     
 }
 
@@ -54,7 +55,7 @@
 }
 
 @media only screen and (max-width:600px){
-    .contenedor{
+    .contenedor_oraciones{
         display: grid;
         grid-template-columns: 100%;
         grid-auto-rows: auto;
